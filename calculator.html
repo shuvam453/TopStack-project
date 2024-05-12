@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculator | TopStack</title>
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- All CSS -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="main-head">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html"><img src="images/logo-new.png" alt=""></a>
+                <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span class="stick"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="stick"></span>
+                </button>
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a href="index.html">
+                            <i><img src="images/home-icon.svg" alt=""></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#about-section">
+                            <i><img src="images/about.svg" alt=""></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="current-menu-item">
+                        <a href="calculator.html">
+                            <i><img src="images/calculator-icon.svg" alt=""></i>
+                            Calculator
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar_wrappr">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" class="search_btn"><img src="images/search-icon.svg" alt=""></a>
+                        <div class="search_frm_wrappr">
+                            <a href="javascript:void(0);" class="close_btn">X</a>
+                            <form action="">
+                                <input type="text" placeholder="Search....">
+                                <input type="submit" value="submit">
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="navBtnn">Get in touch</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+        <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+    </header>
+
+
+    <div class="calculator_sec">
+        <div class="container">
+            <div class="sec-head text-center">
+                <h2>Calculator</h2>
+            </div>
+            <div class="calculator_wrrpr">
+                <form class="calculator" name="calc">
+                    <!--     <input type="text" readonly class="value" name="txt"> -->
+                    <textarea name="txt" readonly class="value" rows="3"></textarea>
+                    <span class="num clear" onclick="calc.txt.value = ''">c</span>
+                    <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+                    <span class="num" onclick="document.calc.txt.value +='*'">*</span>
+                    <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+                    <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+                    <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+                    <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+                    <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+                    <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+                    <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+                    <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+                    <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+                    <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+                    <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+                    <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+                    <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+                    <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+                    <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="fttr_rw">
+                <div class="fttr_logo_col">
+                    <a href="#" class="fttr_logo"><img src="images/logo-new.png" alt=""></a>
+                    <p>All about finance trading and Investment in this Website</p>
+                </div>
+                <div class="fttr_contact_col">
+                    <div class="fttr_head">
+                        <p>Contact Us</p>
+                    </div>
+                    <ul class="contact_list">
+                        <li><a href="mailto:contact.us@gamil.com">contact.us@gamil.com</a></li>
+                        <li><a href="tel:+919876543210">(+91) 9876543210</a></li>
+                    </ul>
+                </div>
+                <div class="social-media-col">
+                    <div class="fttr_head">
+                        <p>Social Media</p>
+                    </div>
+                    <ul class="social_list">
+                        <li><a href="#"><img src="images/fb.svg" alt=""></a></li>
+                        <li><a href="#"><img src="images/x.svg" alt=""></a></li>
+                        <li><a href="#"><img src="images/instra.svg" alt=""></a></li>
+                        <li><a href="#"><img src="images/linkedin.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p>Created by GCETTS © 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="//code.tidio.co/hpgringkpewutmkthrlwpo7mozrdqbfw.js" async></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
